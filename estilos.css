@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 101vw;
+    height: 20vh;
+    margin-top: 81vh;
+    position: fixed;
+    z-index: 0;
+    display: flex;
+    align-items: flex-end;
+    z-index: 3;
+    
+}
+#pie{
+    background-color: black;
+    background-image: url(./imagenes/memphis.png);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size:50%;
+    position: absolute;
+    width: 101vw;
+    height: 20vh;
+    margin-bottom: 2%;
+    border-top:8px solid white ;
+    box-sizing: border-box;
+    border-radius: 60% 0% 0% 0%;
+   
+ }
+
+h2{
+    width: 100vw;
+    margin-top: 11vh;
+    font-family: 'GFS Didot', serif, sans-serif, Arial;
+    color: aliceblue;
+    position:absolute;
+    z-index: 2;
+    text-align:center;
+    font-size: 90px;
+    text-shadow: 3px 3px 6px black;
+}
+#texto{
+    color: white;
+    list-style-type: square;
+    height: 40vh;
+    width: 60vw;
+    margin-top: 12vh;
+    margin-left: 10vw;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.secciones{
+    background-color: black;
+    border: solid 2px black;
+    width: 100vw;
+    height: 25vh;
+
+
+}
+.img{
+    width: 100vw;
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: absolute;
+    filter: blur(6px) brightness(70%);
+    z-index: 1;
+}
+
+#banner{
+    width: 101vw;
+    height: 25vh;
+    opacity: 0;
+    margin-top: 0%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 0;
+    border-radius: 0% 0% 40% 0%;
+    border-bottom: 8px dotted white ;
+
+}
+
+#base_banner{
+background-color: black;
+margin-top: 15vh;
+height: 60vh;
+width: 101vw;
+position: fixed;
+z-index: 0;
+opacity: 0;
+border-bottom: 8px solid white;
+border-radius: 0% 0% 40% 0%;
+}
+#cruz{
+    position: fixed;
+    margin-top: 25vh;
+    margin-left: 90vw;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 50% 50% 50% 50%;
+
+}
+
+#img_entradas{
+    background-image: url(./imagenes/rabas.jpg);
+}
+
+#img_hamburguesas{
+    
+    background-image: url(./imagenes/hamburguesa.webp);
+}
+#img_lomos{
+    background-image: url(./imagenes/lomo.webp);
+}
+#img_pizzas{
+    background-image: url(./imagenes/pizza.jpg);
+}
+#img_empanadas{
+    background-image: url(./imagenes/empanada.webp);
+}
+#img_principales{
+    background-image: url(./imagenes/principal.jpg);
+}
+#img_pastas{
+    background-image: url(./imagenes/pastas.jpg);
+}
+#img_ensaladas{
+    background-image: url(./imagenes/ensalada.jpg);
+}
+#img_sushi{
+    background-image: url(./imagenes/sushi.jpeg);
+}
+#img_infantil{
+    background-image: url(./imagenes/infantil.webp);
+}
+#img_bebida{
+    background-image: url(./imagenes/bebida.jpg);
+}
+#img_cerveza{
+    background-image: url(./imagenes/cervezas.jpg);
+}
+#img_vino{
+    background-image: url(./imagenes/vino.jpg);
+}
+#img_coctel{
+    background-image: url(./imagenes/coctel.webp);
+}
+#img_postres{
+    background-image: url(./imagenes/postre.jpg);
+}
+#cafeteria{
+    height: 40vh;
+}
+#img_cafeteria{
+    background-image: url(./imagenes/cafeteria.jpg);
+}
+
+
+
+
+
+
+
+
+
