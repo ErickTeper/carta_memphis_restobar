@@ -71,7 +71,7 @@ h2{
     background-size: cover;
     box-sizing: border-box;
     position: absolute;
-    filter: blur(6px) brightness(70%);
+    filter: blur(3px) brightness(70%);
     z-index: 1;
 }
 
