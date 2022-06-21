@@ -46,13 +46,20 @@ h2{
     color: white;
     list-style-type: square;
     height: 40vh;
-    width: 60vw;
+    width: 90vw;
     margin-top: 12vh;
     margin-left: 10vw;
     font-size: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    z-index: 0;
+}
+
+.texto_info{
+    color: white;
+    text-align: center;
+    font-size: 50px;
 }
 
 .secciones{
@@ -101,15 +108,31 @@ z-index: 0;
 opacity: 0;
 border-bottom: 8px solid white;
 border-radius: 0% 0% 40% 0%;
+display: flex;
 }
 #cruz{
     position: fixed;
-    margin-top: 25vh;
-    margin-left: 90vw;
+    margin-top: 22vh;
+    margin-left: 92vw;
     z-index: 0;
     opacity: 0;
     border-radius: 50% 50% 50% 50%;
 
+}
+.info{
+    color: white;
+    border-radius: 50%;
+}
+
+#contenedor_info{
+    background-color: rgb(23, 23, 26);
+    height: 40vh;
+    width: 90vw;
+    margin-top: 12vh;
+    position: fixed;
+    opacity: 0;
+    z-index: 1;
+    border-radius: 0% 5% 30% 0%;
 }
 
 #img_entradas{
