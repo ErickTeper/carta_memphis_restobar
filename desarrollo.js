@@ -4,6 +4,7 @@ $(document).ready(function(){
     var palabras=document.querySelectorAll("h2");
     
     document.getElementById("cruz").addEventListener("click", cerrar_banner, false);
+    //document.getElementById("boton_volver").addEventListener("click", volver, false);
 
     for (var i=0; i<elementos.length; i++){  
         elementos[i].addEventListener("click", detalles, false);
@@ -169,6 +170,7 @@ var texto_cafeteria="<ul id='texto'>\
      }else if (e.target==img_empanadas || e.target==h_empanadas){
          $("#banner").attr("src", "imagenes/empanada.webp").css("zIndex", "4").animate({opacity:"1"}, 1000);
          $("#base_banner").append(texto_empanadas);
+
      }else if (e.target==img_principales || e.target==h_principales){
          $("#banner").attr("src", "imagenes/principal.jpg").css("zIndex", "4").animate({opacity:"1"}, 1000);
          $("#base_banner").append(texto_principales);
@@ -214,118 +216,119 @@ function info_entradas(e){
 
     switch(e.target){
         case info_brusqueta:
-        $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
-        $("#base_banner").append("<div id='contenedor_info'><h3><u>BUSQUETAS SERRANAS</u></h3>\
-        <p class='texto_info'>Pan de campo tostado, rucula, jamon crudo, queso sardo, tomate cherry</p></div>");
-        $("#contenedor_info").animate({opacity:"1"}, 1000);
-        break;
-        case info_rabas:
-         $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
-         $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>RABAS</u></h3>\
-         <p class='texto_info'>Rabas rebozadas y frutas, limón, mayonesa casera</p></div>");
-         $("#contenedor_info").animate({opacity:"1"}, 1000);
-        break;
-        case info_langostinos:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
-            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>LANGOSTINOS</u></h3>\
-            <p class='texto_info'>rebozados y fritos</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
-           break;
-        case info_papascheddar:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
-            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS CHEDDAR</u></h3>\
-            <p class='texto_info'>Papas, queso cheddar y verdeo.</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
-        break;
-        case info_papasbacon:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
-            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS BACON</u></h3>\
-            <p class='texto_info'>Papas, queso cheddar, bacon y verdeo</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
-        break;
-        case info_papasquesos:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
-            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS 4 QUESOS</u></h3>\
-            <p class='texto_info'>papas, 4 quesos, jamón, verdeo, cebolla morada</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
-        break;
-        case info_papasmemphis:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
-            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS MEMPHIS</u></h3>\
-            <p class='texto_info'>Papas, huevo, jamon, cebolla morada, perejil, bacon, crema</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>BUSQUETAS SERRANAS</u></h3>\
+        <p class='texto_info'>Pan de campo tostado, rucula, jamon crudo, queso sardo, tomate cherry</p>\
+        <div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+        $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
         break;
 
+        case info_rabas:
+         $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>RABAS</u></h3>\
+         <p class='texto_info'>Rabas rebozadas y frutas, limón, mayonesa casera</p>\
+         <div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+         $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
+        break;
+        case info_langostinos:
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>LANGOSTINOS</u></h3>\
+            <p class='texto_info'>rebozados y fritos</p><div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
+           break;
+        case info_papascheddar:
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS CHEDDAR</u></h3>\
+            <p class='texto_info'>Papas, queso cheddar y verdeo.</p><div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
+        break;
+        case info_papasbacon:
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS BACON</u></h3>\
+            <p class='texto_info'>Papas, queso cheddar, bacon y verdeo</p><div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
+        break;
+        case info_papasquesos:
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS 4 QUESOS</u></h3>\
+            <p class='texto_info'>papas, 4 quesos, jamón, verdeo, cebolla morada</p>\
+            <div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
+        break;
+        case info_papasmemphis:
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS MEMPHIS</u></h3>\
+            <p class='texto_info'>Papas, huevo, jamon, cebolla morada, perejil, bacon, crema</p>\
+            <div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
+        break;
+        
+
     };
+    document.getElementById("boton_volver").addEventListener("click", volver, false);
  }
 
 function info_principales(e){
+
+    
     switch(e.target){
         case info_milapollo:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
             $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>MILANESA DE POLLO</u></h3>\
-            <p class='texto_info'>Milanesa de pollo, jamon, queso, huevo, lechuga, tomate.</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+            <p class='texto_info'>Milanesa de pollo, jamon, queso, huevo, lechuga, tomate.</p><div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
+
         break;
         case info_milaternera:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
             $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>MILANESA DE TERNERA</u></h3>\
-            <p class='texto_info'>Milanesa de ternera, jamon, queso, huevo, lechuga, tomate.</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+            <p class='texto_info'>Milanesa de ternera, jamon, queso, huevo, lechuga, tomate.</p><div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
         break;
         case info_milarellena:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
             $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>MILANESA RELLENA</u></h3>\
-            <p class='texto_info'>Milanesa de ternera rrellena con muzza, jamon, pimientos y cebolla caramelizada</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+            <p class='texto_info'>Milanesa de ternera rellena con muzza, jamon, pimientos y cebolla caramelizada</p>\
+            <div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
         break;
         case info_pechuga:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
             $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PECHUGA GRILLADA</u></h3>\
-            <p class='texto_info'>Pechuga grillada con ensalada</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+            <p class='texto_info'>Pechuga grillada con ensalada</p><div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
         break;
-        case info_lomoplato:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+        case info_lomoplato:;
             $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>LOMO AL PLATO</u></h3>\
-            <p class='texto_info'>Lomo (jugoso, a punto o seco), huevo, tomate, lechuga.</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+            <p class='texto_info'>Lomo (jugoso, a punto o seco), huevo, tomate, lechuga.</p><div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
         break;
         case info_brochetas:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
             $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>BROCHETAS DE POLLO</u></h3>\
-            <p class='texto_info'>3 brochetas de pollo con salsa criolla y papas fritas.</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+            <p class='texto_info'>3 brochetas de pollo con salsa criolla y papas fritas.</p><div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
         break;
         case info_carre:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
             $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>CARRÉ O BONDIOLA</u></h3>\
             <p class='texto_info'> Carré o bondiola de cerdo (a elección), chips de batatas, papas noisette y salsa a eleccion</p><br>\
-            <p class='texto_info'><i>Salsas:<i> verdeo, champignones</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+            <p class='texto_info'><i>Salsas:<i> verdeo, champignones</p><div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
         break;
         case info_ojobife:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
             $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>OJO DE BIFE</u></h3>\
-            <p class='texto_info'>Ojo de bife (jugoso, a punto o seco), vegetales asados, huevo y papas noisette</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+            <p class='texto_info'>Ojo de bife (jugoso, a punto o seco), vegetales asados, huevo y papas noisette</p>\
+            <div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
         break;
         case info_cordero:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
             $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>CORDERO</u></h3>\
-            <p class='texto_info'>Cordero en reducción de malbec y frutos rojos con puré de papas</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+            <p class='texto_info'>Cordero en reducción de malbec y frutos rojos con puré de papas</p>\
+            <div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
         break;
         case info_salmon:
-            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            //$("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
             $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>SALMÓN ROSADO</u></h3>\
-            <p class='texto_info'>Salmós rosado en salsa de camarones, arroz con vegetales y mix de brotes</p></div>");
-            $("#contenedor_info").animate({opacity:"1"}, 1000);
+            <p class='texto_info'>Salmós rosado en salsa de camarones, arroz con vegetales y mix de brotes</p>\
+            <div id='boton_volver'><div id='flecha_volver'></div></div></div>");
+            $("#contenedor_info").animate({marginLeft:"0vw"}, 1000);
         break;
 
 
     }
+    document.getElementById("boton_volver").addEventListener("click", volver, false);
 }
+
+
 
  
  function cerrar_banner(){
@@ -339,3 +342,9 @@ function info_principales(e){
      $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
      
  }
+
+
+ function volver(){
+    $("#contenedor_info").animate({marginLeft:"-95vw"},1000, function(){$(this).remove()});
+
+}

@@ -128,12 +128,34 @@ display: flex;
     background-color: rgb(23, 23, 26);
     height: 40vh;
     width: 90vw;
+    margin-left: -95vw;
     margin-top: 12vh;
     position: fixed;
-    opacity: 0;
     z-index: 1;
     border-radius: 0% 5% 30% 0%;
 }
+
+#boton_volver{
+    background-color: rgba(255, 255, 255, 0.678);
+    height: 4vh;
+    width: 6vw;
+    margin-left: 90vw;
+    border-radius: 0% 20% 60% 0%;
+}
+
+#flecha_volver{
+    background-image: url(./imagenes/volver.png);
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 3vh;
+    width: 6vw;
+}
+
+
+
 
 #img_entradas{
     background-image: url(./imagenes/rabas.jpg);
