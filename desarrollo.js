@@ -11,137 +11,137 @@ $(document).ready(function(){
     for (var i=0; i<palabras.length; i++){
         palabras[i].addEventListener("click", detalles, false);
     }
+
     
  });
 
 var texto_entradas="<ul id='texto'>\
-    <li class='lista'>BRUSQUETA SERRANA $480  <img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_1'></li><p hidden></p>\
-    <li>RABAS....... $1200  <img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_2'></li><p hidden></p>\
-    <li>LANGOSTINOS...... $1300</li><p hidden class='detalles'>bla bla bla</p><br>\
-    <li>PAPAS CLÁSICAS.... $450</li><p hidden></p>\
-    <li>PAPAS CHEDDAR..... $550</li><p hidden></p>\
-    <li>PAPAS BACON..... $600</li><p hidden></p>\
-    <li>PAPAS 4 QUESOS..... $680</li><p hidden></p>\
-    <li>PAPAS MEMPHIS!.... $720</li><p hidden></p>"
+    <li>BRUSQUETA SERRANA $480  <img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_brusqueta'></li>\
+    <li>RABAS....... $1200  <img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_rabas'></li>\
+    <li>LANGOSTINOS...... $1300 <img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_langostinos'></li><br>\
+    <li>PAPAS CLÁSICAS.... $450</li>\
+    <li>PAPAS CHEDDAR..... $550<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_papascheddar'></li>\
+    <li>PAPAS BACON..... $600<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_papasbacon'></li>\
+    <li>PAPAS 4 QUESOS..... $680<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_papasquesos'></li>\
+    <li>PAPAS MEMPHIS!.... $720<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_papasmemphis'></li>"
 
 var texto_hamburguesas="<ul id='texto'>\
-    <li>CLASICA.......... $600 </li><p hidden>Medallon de carne, lechuga, tomate, jamon, queso</p>\
-    <li>COMPLETA....... $700</li><p hidden>Medallon de carne, lechuga, tomate, cheddar, panceta, cebolla morada, huevo</p>\
-    <li>VEGGIE........ $700</li><p hidden>Medallon veggie, lechuga, tomate y pimientos asados, cebolla morada,queso</p>\
-    <li>CRIOLLA....... $750</li><p hidden>Medallon de carne, queso, chimi, salsa criolla, lechuga, cebolla morada, huevo</p>\
-    <li>MEXICANA...... $750</li><p hidden>Medallon de carne, lechuga, tomate, guacamole, pimientos</p>\
-    <li>BLUE.......... $780</li><p hidden>Medallon de carne, rucula, queso azul, nueces, jamon crudo</p>\
-    <li>BLACK......... $800</li><p hidden>Bondiola desmenuzada, salsa barbacoa, queso, pimientos y cebollas asadas</p>\
-    <li>MEMPHIS!....... $850</li><p hidden>Doble medallon de carne, lechuga, tomate, jamon, cheddar, huevo, pepinos</p>"
+    <li>CLASICA.......... $600 <img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_burclasica'></li>\
+    <li>COMPLETA....... $700<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_burcompleta'></li>\
+    <li>VEGGIE........ $700<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_burveggie'></li>\
+    <li>CRIOLLA....... $750<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_burcriolla'></li>\
+    <li>MEXICANA...... $750<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_brumexicana'></li>\
+    <li>BLUE.......... $780<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_burblue'></li>\
+    <li>BLACK......... $800<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_burblack'></li>\
+    <li>MEMPHIS!....... $850<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_burmemphis'></li>"
 
 var texto_lomos="<ul id='texto'>\
-    <li>LOMO COMPLETO $950 </li><p hidden>lomo, jamon, queso, huevo, tomate, lechuga, mayonesa, PAPAS FRITAS</p>\
-    <li>LOMO POLLO $900</li><p hidden></p>\
-    <li>LOMO VEGGIE $900</li><p hidden></p>\
-    <li>LOMO MEXICANO $980</li><p hidden></p>"
+    <li>LOMO COMPLETO $950 <img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_lomocompleto'></li>\
+    <li>LOMO POLLO $900<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_lomopollo'></li>\
+    <li>LOMO VEGGIE $900<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_lomoveggie'></li>\
+    <li>LOMO MEXICANO $980<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_lomomexicano'></li>"
 
 var texto_pizzas="<ul id='texto'>\
-    <li>MUZZARELLA............ $950 </li><p hidden></p>\
-    <li>ESPECIAL.................... $1050</li><p hidden></p>\
-    <li>NAPOLITANA............. $1050</li><p hidden></p>\
-    <li>FUGAZA...................... $1050</li><p hidden></p>\
-    <li>CUATRO QUESOS...... $1150</li><p hidden></p>\
-    <li>ANCHOAS................... $1150</li><p hidden></p>\
-    <li>RUCULA...................... $1150</li><p hidden></p>\
-    <li>CALABRESA.............. $1150</li><p hidden></p>\
-    <li>PALMITOS.................. $1200</li><p hidden></p>\
-    <li>HAWAIANA................ $1200</li><p hidden></p>\
-    <li>MEMPHIS!.................. $1350</li><p hidden></p>"
+    <li>MUZZARELLA............ $950</li>\
+    <li>ESPECIAL.................... $1050</li>\
+    <li>NAPOLITANA............. $1050</li>\
+    <li>FUGAZA...................... $1050</li>\
+    <li>CUATRO QUESOS...... $1150</li>\
+    <li>ANCHOAS................... $1150</li>\
+    <li>RUCULA...................... $1150</li>\
+    <li>CALABRESA.............. $1150</li>\
+    <li>PALMITOS.................. $1200</li>\
+    <li>HAWAIANA................ $1200<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_pizzahawaiana'></li>\
+    <li>MEMPHIS!.................. $1350<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_pizzamemphis'></li>"
 
 var texto_empanadas="<ul id='texto'>\
-    <li>CARNE SALADA.......$150 </li><p hidden></p>\
-    <li>CARNE DULCE..... $700</li><p hidden></p>\
-    <li>JAMON Y QUESO.......$150</li><p hidden></p>\
-    <li>QUESO Y CEBOLLA....$150</li><p hidden></p>\
-    <li>ARABE...................$150</li><p hidden></p>\
-    <li>POLLO..................$150</li><p hidden></p>\
-    <li>LOMO A CUCHILLO..$170</li><p hidden></p>\
-    <li>MATAMBRE A CUCHILLO..$170</li><p hidden></p>"
+    <li>CARNE SALADA.......$150 </li>\
+    <li>CARNE DULCE..... $700</li>\
+    <li>JAMON Y QUESO.......$150</li>\
+    <li>QUESO Y CEBOLLA....$150</li>\
+    <li>ARABE...................$150</li>\
+    <li>POLLO..................$150</li>\
+    <li>LOMO A CUCHILLO..$170</li>\
+    <li>MATAMBRE A CUCHILLO..$170</li>"
 
 var texto_principales="<ul id='texto'>\
-    <li>MILA DE POLLO...........$1000 </li><p hidden></p>\
-    <li>MILA DE TERNERA.......$1100</li><p hidden></p>\
-    <li>MILA RELLENA...........$1400</li><p hidden></p>\
-    <li>PECHUGA GRILLADA... $1300</li><p hidden></p>\
-    <li>LOMO AL PLATO......$1400</li><p hidden></p>\
-    <li>PECHUGA GRILLADA... $1300</li><p hidden></p>\
-    <li>BROCHETAS DE POLLO...$1400</li><p hidden></p>\
-    <li>CARRÉ O BONDIOLA.......$1800</li><p hidden></p>\
-    <li>OJO DE BIFE.............$1800</li><p hidden></p>\
-    <li>CORDERO..................$2100</li><p hidden></p>\
-    <li>SALMON...................$2400</li><p hidden></p>"
+    <li>MILA DE POLLO...............$1000 <img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_milapollo'></li>\
+    <li>MILA DE TERNERA...........$1100<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_milaternera'></li>\
+    <li>MILA RELLENA..................$1400<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_milarellena'></li>\
+    <li>PECHUGA GRILLADA.......$1300<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_pechuga'></li>\
+    <li>LOMO AL PLATO................$1400<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_lomoplato'></li>\
+    <li>BROCHETAS DE POLLO...$1400<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_brochetas'></li>\
+    <li>CARRÉ O BONDIOLA........$1800<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_carre'></li>\
+    <li>OJO DE BIFE.......................$1800<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_ojobife'></li>\
+    <li>CORDERO...........................$2100<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_cordero'></li>\
+    <li>SALMON ROSADO............$2400<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id='info_salmon'></li>"
 
 var texto_pastas="<ul id='texto'>\
-    <li>TALLARINES AL HUEVO....$980</li><p hidden></p>\
-    <li>TALLARINES NEGROS</li><p hidden></p><br>\
-    <P><u>SORRENTINOS</u><P><p hidden></p>\
-    <li>CAPRESSE</li><p hidden></p>\
-    <li>CORDERO AL MALBEC</li><p hidden></p>\
-    <li>JAMON Y QUESO</li><P hidden></P>\
-    <li>SALMON</li><p hidden></p>"
+    <li>TALLARINES AL HUEVO....$980</li>\
+    <li>TALLARINES NEGROS</li><br>\
+    <p><u>SORRENTINOS</u></p>\
+    <li>CAPRESSE</li>\
+    <li>CORDERO AL MALBEC</li>\
+    <li>JAMON Y QUESO</li>\
+    <li>SALMON</li>\
+    <p><i>ELEGI LA SALSA!</i></p>"
 
 var texto_ensaladas="<ul id='texto'>\
-    <li>MIXTA SIMPLE.............$450</li><p hidden></p>\
-    <li>RUCULA, CHERRYS<br> Y PARMESANO ..........$600</li><p hidden></p>\
-    <li>MAR Y TIERRA.........$1300</li><p hidden></p>\
-    <li>MEMPHIS..................$1500</li><p hidden></p>"
+    <li>MIXTA SIMPLE.............$450</li>\
+    <li>RUCULA, CHERRYS<br> Y PARMESANO ..........$600</li>\
+    <li>MAR Y TIERRA.........$1300<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>MEMPHIS..................$1500<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>"
 
 var texto_sushi="<ul id='texto'>\
-    <li>COMBO INFERNO</li><p hidden></p>\
-    <li>COMBO </li><p hidden></p>"
+    <li>COMBO INFERNO<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>COMBO <img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>"
 
 var texto_infantil="<ul id='texto'>\
-    <li>MILANESA</li><p hidden></p>\
-    <li>MILANESA POLLO</li><p hidden></p>\
-    <li>NUGETTS DE POLLO</li><p hidden></p>"
+    <li>MILANESA<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>MILANESA POLLO<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>NUGETTS DE POLLO<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>"
 
 var texto_bebidas="<ul id='texto'>\
-    <li>LIMONADA</li><p hidden></p>\
-    <li>LINEA COCA-COLA 350ml</li><p hidden></p>\
-    <li>AQUARIOS 500ml</li><p hidden></p>\
-    <li>AGUA MINERAL</li><p hidden></p>\
-    <li>AGUA CON GAS</li><p hidden></p>\
-    <li>RED BULL 240ml</li><p hidden></p>"
+    <li>LIMONADA<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>LINEA COCA-COLA 350ml<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>AQUARIOS 500ml<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>AGUA MINERAL</li>\
+    <li>AGUA CON GAS</li>\
+    <li>RED BULL 240ml<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>"
 
 var texto_cervezas="<ul id='texto'>\
-    <li>GOLDEN...............$300</li><p hidden></p>\
-    <li>SCOTISH.............$300</li><p hidden></p>\
-    <li>IPA.................$300</li><p hidden></p>\
-    <li>PEÑON DEL ÁGUILA....$300</li><p hidden></p>\
-    <li>STELLA ARTOIS....$300</li><p hidden></p>\
-    <li>CORONA</li><p hidden></p>\
-    <li>PATAGONIA</li><p hidden></p>\
-    <li></li><p hidden></p>"
+    <li>GOLDEN...............$300</li>\
+    <li>SCOTISH.............$300</li>\
+    <li>IPA.................$300</li>\
+    <li>PEÑON DEL ÁGUILA....$300<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>STELLA ARTOIS....$300<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>CORONA</li>\
+    <li>PATAGONIA<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>"
 
 var texto_vinos="<ul id='texto'>\
-    <p><u>BODEGAS</u><p><br><p hidden></p>\
-    <li>MI TERRUÑO</li><p hidden></p>\
-    <li>SALENTEIN</li><p hidden></p>\
-    <li>LAS PERDICES</li><p hidden></p>\
-    <li>MOSQUITA MUERTA</li><p hidden></p>\
-    <br><li>BLANCOS</li><p hidden></p>"
+    <p><u>BODEGAS</u><p><br>\
+    <li>MI TERRUÑO<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>SALENTEIN<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>LAS PERDICES<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>MOSQUITA MUERTA<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <br><li>BLANCOS<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>"
 
 var texto_coctelería="<ul id='texto'>\
-    <li>GIN TONIC</li><p hidden></p>\
-    <li>APERITIVOS</li><p hidden></p>\
-    <li>TRADICIONALES</li><p hidden></p>\
-    <li>DE AUTOR</li><p hidden></p>"
+    <li>GIN TONIC<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>APERITIVOS<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>TRADICIONALES<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>\
+    <li>DE AUTOR<img src='./imagenes/info.jpg' height='50vh' width='50vw' class='info' id=''></li>"
 
 var texto_postres="<ul id='texto'>\
-    <li>TIRAMISU.................$680</li><p hidden></p>\
-    <li>CHEESE CAKE..........$680</li><p hidden></p>\
-    <li>CHOCOTORTA.............$680</li><p hidden></p>\
-    <li>DOBLE OREO....$680</li><p hidden></p>"
+    <li>TIRAMISU.................$680</li>\
+    <li>CHEESE CAKE..........$680</li>\
+    <li>CHOCOTORTA.............$680</li>\
+    <li>DOBLE OREO....$680</li>"
 
 var texto_cafeteria="<ul id='texto'>\
-    <li>POCILLO.........</li><p hidden></p>\
-    <li>JARRITO.........</li><p hidden></p>\
-    <li>TAZA................</li><p hidden></p>"
+    <li>POCILLO.........</li>\
+    <li>JARRITO.........</li>\
+    <li>TAZA................</li>"
 
  function detalles(e){
      
@@ -155,8 +155,8 @@ var texto_cafeteria="<ul id='texto'>\
         $("#base_banner").append(texto_entradas);
         var informacion=document.querySelectorAll(".info");
         for (var i=0; i<informacion.length; i++){  
-            informacion[i].addEventListener("click", muestra_informacion, false);
-        }
+            informacion[i].addEventListener("click", info_entradas, false);
+        };
      }else if (e.target==img_hamburguesas || e.target==h_hamb){
         $("#banner").attr("src", "imagenes/hamburguesa.webp").css("zIndex", "4").animate({opacity:"1"}, 1000);
         $("#base_banner").append(texto_hamburguesas);  
@@ -172,6 +172,11 @@ var texto_cafeteria="<ul id='texto'>\
      }else if (e.target==img_principales || e.target==h_principales){
          $("#banner").attr("src", "imagenes/principal.jpg").css("zIndex", "4").animate({opacity:"1"}, 1000);
          $("#base_banner").append(texto_principales);
+         var informacion_pr=document.querySelectorAll(".info");
+         for (var i=0; i<informacion_pr.length; i++){  
+            informacion_pr[i].addEventListener("click", info_principales, false);
+
+        }
      }else if (e.target==img_pastas || e.target==h_pastas){
          $("#banner").attr("src", "imagenes/pastas.jpg").css("zIndex", "4").animate({opacity:"1"}, 1000);
          $("#base_banner").append(texto_pastas);
@@ -203,20 +208,126 @@ var texto_cafeteria="<ul id='texto'>\
          $("#banner").attr("src", "imagenes/cafeteria.jpg").css("zIndex", "4").animate({opacity:"1"}, 1000);
          $("#base_banner").append(texto_cafeteria);
      }
+
+ }
+function info_entradas(e){
+
+    switch(e.target){
+        case info_brusqueta:
+        $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+        $("#base_banner").append("<div id='contenedor_info'><h3><u>BUSQUETAS SERRANAS</u></h3>\
+        <p class='texto_info'>Pan de campo tostado, rucula, jamon crudo, queso sardo, tomate cherry</p></div>");
+        $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_rabas:
+         $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+         $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>RABAS</u></h3>\
+         <p class='texto_info'>Rabas rebozadas y frutas, limón, mayonesa casera</p></div>");
+         $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_langostinos:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>LANGOSTINOS</u></h3>\
+            <p class='texto_info'>rebozados y fritos</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+           break;
+        case info_papascheddar:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS CHEDDAR</u></h3>\
+            <p class='texto_info'>Papas, queso cheddar y verdeo.</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_papasbacon:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS BACON</u></h3>\
+            <p class='texto_info'>Papas, queso cheddar, bacon y verdeo</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_papasquesos:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS 4 QUESOS</u></h3>\
+            <p class='texto_info'>papas, 4 quesos, jamón, verdeo, cebolla morada</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_papasmemphis:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PAPAS MEMPHIS</u></h3>\
+            <p class='texto_info'>Papas, huevo, jamon, cebolla morada, perejil, bacon, crema</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+
+    };
  }
 
- function muestra_informacion(a){
-    if(a.target==info_1){
-        $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
-        $("#base_banner").append("<div id='contenedor_info'><p class='texto_info'>esto es una prueba</p></div>");
-        $("#contenedor_info").animate({opacity:"1"}, 1000);
-    }else if(a.target==info_2){
-        $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
-        $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>RABAS</u></h3>\
-        <p class='texto_info'>hola hola hola hola hola hola hoal hola hola hola hola hola</p></div>");
-        $("#contenedor_info").animate({opacity:"1"}, 1000);
+function info_principales(e){
+    switch(e.target){
+        case info_milapollo:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>MILANESA DE POLLO</u></h3>\
+            <p class='texto_info'>Milanesa de pollo, jamon, queso, huevo, lechuga, tomate.</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_milaternera:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>MILANESA DE TERNERA</u></h3>\
+            <p class='texto_info'>Milanesa de ternera, jamon, queso, huevo, lechuga, tomate.</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_milarellena:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>MILANESA RELLENA</u></h3>\
+            <p class='texto_info'>Milanesa de ternera rrellena con muzza, jamon, pimientos y cebolla caramelizada</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_pechuga:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>PECHUGA GRILLADA</u></h3>\
+            <p class='texto_info'>Pechuga grillada con ensalada</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_lomoplato:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>LOMO AL PLATO</u></h3>\
+            <p class='texto_info'>Lomo (jugoso, a punto o seco), huevo, tomate, lechuga.</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_brochetas:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>BROCHETAS DE POLLO</u></h3>\
+            <p class='texto_info'>3 brochetas de pollo con salsa criolla y papas fritas.</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_carre:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>CARRÉ O BONDIOLA</u></h3>\
+            <p class='texto_info'> Carré o bondiola de cerdo (a elección), chips de batatas, papas noisette y salsa a eleccion</p><br>\
+            <p class='texto_info'><i>Salsas:<i> verdeo, champignones</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_ojobife:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>OJO DE BIFE</u></h3>\
+            <p class='texto_info'>Ojo de bife (jugoso, a punto o seco), vegetales asados, huevo y papas noisette</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_cordero:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>CORDERO</u></h3>\
+            <p class='texto_info'>Cordero en reducción de malbec y frutos rojos con puré de papas</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+        case info_salmon:
+            $("#texto").animate({opacity:"0"},1000, function(){$(this).remove()});
+            $("#base_banner").append("<div id='contenedor_info'><h3 class='texto_info'><u>SALMÓN ROSADO</u></h3>\
+            <p class='texto_info'>Salmós rosado en salsa de camarones, arroz con vegetales y mix de brotes</p></div>");
+            $("#contenedor_info").animate({opacity:"1"}, 1000);
+        break;
+
+
     }
- }
+}
+
+ 
  function cerrar_banner(){
      $(this).animate({opacity:"0"}, 1000, function(){$(this).css("zIndex", "0")});
      $("#banner").animate({opacity:"0"}, 1000, function(){
